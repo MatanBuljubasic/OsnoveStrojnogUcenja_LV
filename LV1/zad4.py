@@ -1,5 +1,5 @@
 words = {}
-text = open('osu_lv\song.txt')
+text = open('LV1\song.txt')
 for line in text:
     line = line.rstrip()
     line_words = line.split()

@@ -4,7 +4,7 @@ spam_count = 0
 ham_words = 0
 spam_words = 0
 ex_count = 0
-text = open('osu_lv\SMSSpamCollection.txt')
+text = open('LV1\SMSSpamCollection.txt')
 for line in text:
     line = line.rstrip()
     words = line.split()
