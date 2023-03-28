@@ -26,8 +26,8 @@ b = LogRegression_model.intercept_[0]
 w1,w2 = LogRegression_model.coef_.T
 c = -b/w2
 m = -w1/w2
-xmin, xmax = -4,4
-ymin, ymax = -4,4
+xmin, xmax = X_train[:,0].min()+0.2, X_train[:,0].max()+0.2
+ymin, ymax = X_train[:,1].min()+0.2, X_train[:,1].max()+0.2
 xd = np.array([xmin, xmax])
 yd = m*xd + c
 plt.scatter(x=X_train[:,0], y=X_train[:,1], c=y_train, cmap=cMap, label='Train')
